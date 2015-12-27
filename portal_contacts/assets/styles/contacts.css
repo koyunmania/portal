@@ -201,6 +201,9 @@ a {
   font-weight: bold;
   font-style: italic;
 }
+.contacts-page .contacts-window .menu span {
+  font-size: 12px;
+}
 .contacts-page .contacts-window .menu a {
   border: solid 1px #869761;
   display: inline-block;
