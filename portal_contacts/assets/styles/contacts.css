@@ -153,10 +153,10 @@ a {
   margin: 0 auto;
   padding: 0px 30px 0px 30px;
 }
-.contacts {
+.contacts-page {
   margin-top: 2%;
 }
-.contacts .contact-box {
+.contacts-page .contacts-window {
   padding-left: 25px;
   padding-right: 25px;
   height: 550px;
@@ -164,7 +164,7 @@ a {
   border-radius: 20px;
   border: solid 1px #97bf42;
 }
-.contacts .contact-box .menu {
+.contacts-page .contacts-window .menu {
   display: inline-block;
   width: 100%;
   padding-top: 20px;
@@ -172,22 +172,22 @@ a {
   font-size: 16px;
   line-height: 40px;
 }
-.contacts .contact-box .menu a {
+.contacts-page .contacts-window .menu a {
   color: #176492;
   font-size: 16px;
 }
-.contacts .contact-box .menu input {
+.contacts-page .contacts-window .menu input {
   background: transparent;
   width: 380px;
   color: #475428;
 }
-.contacts .contact-box .menu li {
+.contacts-page .contacts-window .menu li {
   float: left;
   padding-right: 20px;
   padding-left: 20px;
   border-right: 1px solid #d1d6da;
 }
-.contacts .contact-box .menu .search {
+.contacts-page .contacts-window .menu .search {
   background: #b3ca82;
   color: #869761;
   line-height: 30px;
@@ -196,22 +196,60 @@ a {
   width: 480px;
   border-radius: 4px;
 }
-.contacts .contact-box .menu .menu-first {
+.contacts-page .contacts-window .menu .menu-first {
   padding-left: 0px;
 }
-.contacts .contact-box .menu .menu-last {
+.contacts-page .contacts-window .menu .menu-last {
   padding-right: 0px;
   border-right: 0px !important;
 }
-.contacts .contact-box .menu .menu-left {
+.contacts-page .contacts-window .menu .menu-left {
   float: left;
 }
-.contacts .contact-box .menu .menu-right {
+.contacts-page .contacts-window .menu .menu-right {
   float: right;
 }
-.contacts .contact-box .menu .menu-right .user-name {
+.contacts-page .contacts-window .menu .menu-right .user-name {
   font-weight: bold;
   font-style: italic;
+}
+.contacts-page .contacts-window .contacts table {
+  width: 100%;
+}
+.contacts-page .contacts-window .contacts table tr th {
+  background: #adcfe4;
+  color: #176492;
+  line-height: 30px;
+}
+.contacts-page .contacts-window .contacts table tr th:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.contacts-page .contacts-window .contacts table tr th:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.contacts-page .contacts-window .contacts table tr th a {
+  display: block;
+  color: white;
+  font-weight: bold;
+  background: #176492;
+}
+.contacts-page .contacts-window .contacts table tr td {
+  font-size: 15px;
+  color: #0f415f;
+  text-align: left;
+  line-height: 30px;
+}
+.contacts-page .contacts-window .contacts table tr td.operation {
+  color: #0f415f;
+  text-align: center;
+}
+.contacts-page .contacts-window .contacts table tr td a {
+  color: blue;
+}
+.contacts-page .contacts-window .contacts table tr:nth-child(even) {
+  background: #e9eff3;
 }
 /*
 .login {

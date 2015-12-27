@@ -56,13 +56,16 @@ a {
 	outline: 0;
 }
 
+@lightblue: #ADCFE4;
 @blue: #176492;
-@green: #97bf42;
+@darkblue: #0F415F;
 @lightgreen:#B3CA82;
 @middlegreen: #869761;
+@green: #97bf42;
 @darkgreen: #475428;
 @red: #f2080b;
 @grey: #d1d6da;
+@lightgrey: #E9EFF3;
 
 //placeholder text color
 ::-webkit-input-placeholder {
@@ -88,9 +91,9 @@ a {
 	padding: 0px 30px 0px 30px;
 }
 
-.contacts {
+.contacts-page {
 	margin-top: 2%;
-	.contact-box {
+	.contacts-window {
 		padding-left: 25px;
 		padding-right: 25px;
 		height: 550px;
@@ -145,6 +148,49 @@ a {
 				.user-name {
 					font-weight: bold;
 					font-style: italic;
+				}
+			}
+		}
+		.contacts {
+			table {
+				width: 100%;
+				//border-collapse: collapse;
+				tr {
+					th {
+						background: @lightblue;
+						color: @blue;
+						line-height: 30px;
+						&:first-child {
+							border-top-left-radius: 10px;
+							border-bottom-left-radius: 10px;
+						}
+						&:last-child {
+							border-top-right-radius: 10px;
+							border-bottom-right-radius: 10px;
+						}
+						a {
+							display: block;
+							color: white;
+							font-weight: bold;
+							background: @blue;
+						}
+					}
+					td {
+						font-size: 15px;
+						color: @darkblue;	
+						text-align: left;
+						line-height: 30px;
+						&.operation {
+							color: @darkblue;
+							text-align: center;
+						}
+						a {
+							color: blue;
+						}
+					}
+					&:nth-child(even) {
+						background: @lightgrey;
+					}
 				}
 			}
 		}
