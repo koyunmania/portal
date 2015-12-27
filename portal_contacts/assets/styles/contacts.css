@@ -162,49 +162,37 @@ a {
   height: 550px;
   display: block;
   border-radius: 20px;
-  border: solid 1px #97bf42;
+  box-shadow: 0 0 15px 1px #97bf42;
 }
 .contacts-page .contacts-window .menu {
   display: inline-block;
   width: 100%;
-  padding-top: 20px;
-  color: #176492;
-  font-size: 16px;
-  line-height: 40px;
-}
-.contacts-page .contacts-window .menu a {
-  color: #176492;
-  font-size: 16px;
-}
-.contacts-page .contacts-window .menu input {
-  background: transparent;
-  width: 380px;
+  margin-top: 20px;
   color: #475428;
+  font-size: 14px;
+  line-height: 40px;
 }
 .contacts-page .contacts-window .menu li {
   float: left;
-  padding-right: 20px;
-  padding-left: 20px;
-  border-right: 1px solid #d1d6da;
+  padding-right: 10px;
+  padding-left: 10px;
 }
-.contacts-page .contacts-window .menu .search {
-  background: #b3ca82;
+.contacts-page .contacts-window .menu .menu-left {
+  float: left;
+}
+.contacts-page .contacts-window .menu .menu-left .search {
+  border: solid 1px #869761;
   color: #869761;
   line-height: 30px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 480px;
+  width: 520px;
   border-radius: 4px;
 }
-.contacts-page .contacts-window .menu .menu-first {
-  padding-left: 0px;
-}
-.contacts-page .contacts-window .menu .menu-last {
-  padding-right: 0px;
-  border-right: 0px !important;
-}
-.contacts-page .contacts-window .menu .menu-left {
-  float: left;
+.contacts-page .contacts-window .menu .menu-left .search input {
+  background: transparent;
+  width: 500px;
+  color: #475428;
 }
 .contacts-page .contacts-window .menu .menu-right {
   float: right;
@@ -213,122 +201,141 @@ a {
   font-weight: bold;
   font-style: italic;
 }
+.contacts-page .contacts-window .menu a {
+  border: solid 1px #869761;
+  display: inline-block;
+  background: #b3ca82;
+  line-height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  color: #475428;
+  font-size: 10px;
+  font-weight: bold;
+}
+.contacts-page .contacts-window .menu a:hover {
+  opacity: .6;
+}
 .contacts-page .contacts-window .contacts table {
   width: 100%;
 }
-.contacts-page .contacts-window .contacts table tr th {
+.contacts-page .contacts-window .contacts .table-header {
+  text-align: center;
   background: #adcfe4;
   color: #176492;
   line-height: 30px;
 }
-.contacts-page .contacts-window .contacts table tr th:first-child {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+.contacts-page .contacts-window .contacts .table-header tr th {
+  width: 25%;
 }
-.contacts-page .contacts-window .contacts table tr th:last-child {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.contacts-page .contacts-window .contacts table tr th a {
-  display: block;
+.contacts-page .contacts-window .contacts .table-header tr th a {
   color: white;
   font-weight: bold;
-  background: #176492;
+  background: #4B83A4;
+  line-height: 20px;
+  width: 20px;
+  border-radius: 5px;
 }
-.contacts-page .contacts-window .contacts table tr td {
+.contacts-page .contacts-window .contacts .table-header tr th a:hover {
+  opacity: .6;
+}
+.contacts-page .contacts-window .contacts .table-header:first-child {
+  border-top-left-radius: 10px;
+}
+.contacts-page .contacts-window .contacts .table-header:last-child {
+  border-top-right-radius: 10px;
+}
+.contacts-page .contacts-window .contacts .table-body {
+  width: 100%;
+  height: 420px;
+  overflow: auto;
+}
+.contacts-page .contacts-window .contacts .table-body tr td {
+  width: 25%;
   font-size: 15px;
   color: #0f415f;
   text-align: left;
   line-height: 30px;
 }
-.contacts-page .contacts-window .contacts table tr td.operation {
+.contacts-page .contacts-window .contacts .table-body tr td.operation {
   color: #0f415f;
   text-align: center;
+  font-size: 16px;
 }
-.contacts-page .contacts-window .contacts table tr td a {
-  color: blue;
+.contacts-page .contacts-window .contacts .table-body tr td.operation a {
+  color: #0f415f;
 }
-.contacts-page .contacts-window .contacts table tr:nth-child(even) {
+.contacts-page .contacts-window .contacts .table-body tr td.operation a p {
+  background: #adcfe4;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 20px;
+}
+.contacts-page .contacts-window .contacts .table-body tr td.operation a:hover {
+  opacity: .6;
+}
+.contacts-page .contacts-window .contacts .table-body tr td:first-child {
+  padding-left: 10px;
+}
+.contacts-page .contacts-window .contacts .table-body tr:nth-child(even) {
   background: #e9eff3;
 }
 /*
-.login {
-	margin-top: 10%;
-	.login-box {
-		position: relative;
-		height: 350px;
-		border-radius: 20px;
-		display: block;
-		box-shadow: 0 0 15px 1px @green;
-		h1 {
-			color: @blue;
-			font-size: 30px;
-			text-align: center;
-			line-height: 20px;
-			padding-top: 30px;
-			padding-bottom: 30px;
-		}
-		.blocks {
-			width: 330px;
-			height: 70%;
-			border-right: solid 1px @grey;
-			float: left;
-			ul {
-				margin-top: 20px;
-				li {
-					padding-left: 20px;
-					margin-bottom: 5px;
-					width: 290px;
-					a {
-						float: right;
-						padding-top: 5px;
-						font-size: 12px;
-						color: @blue;
-					}
-					button {
-						border-radius: 5px;
-						width: 290px;
-						color: @blue;
-						background: @grey;
-						line-height: 40px;
-						margin-top: 20px;
-						&:hover {
-							background: darken(@grey, 20%);
-							cursor: pointer;
-						}
-							
-					}
-					p {
-						border-radius: 5px;
-						color: @darkgreen;
-						background: @lightgreen;
-						line-height: 40px;
-						padding-left: 25px;
-						span {
-							width: 20px;
-						}
-						input {
-							padding-left: 15px;
-							//width: 100px;
-							color: @darkgreen;
-							background: transparent;
+
+			table {
+				width: 100%;
+				thead {
+					tr {
+						th {
+							background: @lightblue;
+							color: @blue;
+							line-height: 30px;
+							&:first-child {
+								border-top-left-radius: 10px;
+								border-bottom-left-radius: 10px;
+							}
+							&:last-child {
+								border-top-right-radius: 10px;
+								border-bottom-right-radius: 10px;
+							}
+							a {
+								display: block;
+								color: white;
+								font-weight: bold;
+								background: @blue;
+							}
 						}
 					}
-				}
-			}
-			.logo {
-				border-left: solid 1px @grey;
-				float: right;
-				img {
-					display: block;
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					right: 10px;
-					margin: auto;
-				}
-			}
-		}
-	}
-}
+				}				
+				tbody {
+					height: 100px;
+					overflow-y: auto;
+					overflow-x: hidden;
+					tr {
+						td {
+							font-size: 15px;
+							color: @darkblue;	
+							text-align: left;
+							line-height: 30px;
+							&.operation {
+								color: @darkblue;
+								text-align: center;
+							}
+							a {
+								color: blue;
+							}
+						}
+						&:nth-child(even) {
+							background: @lightgrey;
+						}
+					} // tr
+				} // tbody
+			} // table
+
+
 */
