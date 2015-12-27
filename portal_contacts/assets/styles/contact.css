@@ -149,17 +149,17 @@ a {
   margin: 0 auto;
   padding: 0px 30px 0px 30px;
 }
-.login {
+.contact {
   margin-top: 10%;
 }
-.login .login-box {
+.contact .contact-box {
   position: relative;
   height: 350px;
   border-radius: 20px;
   display: block;
   box-shadow: 0 0 15px 1px #97bf42;
 }
-.login .login-box h1 {
+.contact .contact-box h1 {
   color: #176492;
   font-size: 30px;
   text-align: center;
@@ -167,73 +167,47 @@ a {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.login .login-box .blocks {
+.contact .contact-box .blocks {
   width: 330px;
   height: 70%;
   border-right: solid 1px #d1d6da;
   float: left;
 }
-.login .login-box .blocks ul {
-  margin-top: 20px;
+.contact .contact-box .blocks ul {
+  margin-top: 50px;
 }
-.login .login-box .blocks ul li {
+.contact .contact-box .blocks ul li {
   padding-left: 20px;
   margin-bottom: 5px;
-  width: 290px;
+  width: 280px;
+  border-bottom: solid 1px #d1d6da;
 }
-.login .login-box .blocks ul li a {
-  float: right;
-  padding-top: 5px;
-  font-size: 12px;
-  color: #176492;
-}
-.login .login-box .blocks ul li button {
-  border-radius: 5px;
-  width: 290px;
-  color: #176492;
-  background: #d1d6da;
-  line-height: 40px;
-  margin-top: 20px;
-}
-.login .login-box .blocks ul li button:hover {
-  background: #98a4ad;
-  cursor: pointer;
-}
-.login .login-box .blocks ul li p {
-  border-radius: 5px;
+.contact .contact-box .blocks ul li em {
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 30px;
   color: #475428;
-  background: #b3ca82;
-  line-height: 40px;
-  padding-left: 25px;
+  width: 80px;
 }
-.login .login-box .blocks ul li p span {
-  width: 20px;
-}
-.login .login-box .blocks ul li p input {
-  padding-left: 15px;
+.contact .contact-box .blocks ul li span {
+  font-size: 14px;
+  line-height: 30px;
   color: #475428;
-  background: transparent;
 }
-.login .login-box .blocks .logo {
+.contact .contact-box .blocks .logo {
   border-left: solid 1px #d1d6da;
   float: right;
 }
-.login .login-box .blocks .logo img {
+.contact .contact-box .blocks .logo img {
   display: block;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 10px;
+  right: 48px;
   margin: auto;
-}
-.login .login-box .blocks .logo #avatar {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 58px;
-  margin: auto;
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   border-radius: 15px;
 }
