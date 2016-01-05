@@ -149,17 +149,17 @@ a {
   margin: 0 auto;
   padding: 0px 30px 0px 30px;
 }
-.contact {
+.login {
   margin-top: 10%;
 }
-.contact .contact-box {
+.login .login-box {
   position: relative;
   height: 350px;
   border-radius: 20px;
   display: block;
   box-shadow: 0 0 15px 1px #97bf42;
 }
-.contact .contact-box h1 {
+.login .login-box h1 {
   color: #176492;
   font-size: 30px;
   text-align: center;
@@ -167,48 +167,21 @@ a {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.contact .contact-box .blocks {
+.login .login-box .blocks {
   width: 330px;
   height: 70%;
   border-right: solid 1px #d1d6da;
   float: left;
 }
-.contact .contact-box .blocks ul {
-  margin-top: 50px;
+.login .login-box .blocks ul {
+  margin-top: 0px;
 }
-.contact .contact-box .blocks ul li {
+.login .login-box .blocks ul li {
   padding-left: 20px;
   margin-bottom: 5px;
-  width: 280px;
-  border-bottom: solid 1px #d1d6da;
+  width: 290px;
 }
-.contact .contact-box .blocks ul li em {
-  display: inline-block;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 30px;
-  color: #475428;
-  width: 70px;
-}
-.contact .contact-box .blocks ul li span {
-  font-size: 14px;
-  line-height: 30px;
-  color: #475428;
-}
-.contact .contact-box .blocks ul li input {
-  background: #F4FAFF;
-  line-height: 30px;
-  font-size: 14px;
-  width: 190px;
-  color: #475428;
-  padding-left: 10px;
-  padding-right: 10px;
-  overflow: hidden;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.contact .contact-box .blocks ul li button {
+.login .login-box .blocks ul li button {
   border-radius: 5px;
   width: 290px;
   color: #176492;
@@ -216,25 +189,39 @@ a {
   line-height: 40px;
   margin-top: 20px;
 }
-.contact .contact-box .blocks ul li button:hover {
+.login .login-box .blocks ul li button:hover {
   background: #98a4ad;
   cursor: pointer;
 }
-.contact .contact-box .blocks ul .button {
-  border-bottom: solid 0px #d1d6da;
+.login .login-box .blocks ul li p {
+  border-radius: 5px;
+  color: #475428;
+  background: #b3ca82;
+  line-height: 40px;
+  padding-left: 25px;
 }
-.contact .contact-box .blocks .logo {
+.login .login-box .blocks ul li p span {
+  width: 20px;
+}
+.login .login-box .blocks ul li p input {
+  padding-left: 25px;
+  color: #475428;
+  background: transparent;
+  width: 185px;
+}
+.login .login-box .blocks ul li p a {
+  color: #475428;
+  padding-right: 5px;
+}
+.login .login-box .blocks .logo {
   border-left: solid 1px #d1d6da;
   float: right;
 }
-.contact .contact-box .blocks .logo img {
+.login .login-box .blocks .logo img {
   display: block;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 48px;
+  right: 10px;
   margin: auto;
-  width: 170px;
-  height: 170px;
-  border-radius: 15px;
 }
